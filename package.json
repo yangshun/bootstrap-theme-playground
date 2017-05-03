@@ -1,0 +1,21 @@
+{
+  "name": "bootstrap-theme-playground",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tay Yang Shun <tay.yang.shun@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-webserver": "^0.9.1"
+  },
+  "main": "index.js",
+  "repository": "git@github.com:yangshun/bootstrap-theme-playground.git",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6"
+  }
+}
