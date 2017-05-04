@@ -20,13 +20,13 @@
     <div class="container">
       <div class="page-header" id="banner">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-xl-12">
             <h1>Default</h1>
             <p class="lead">Basic Bootstrap</p>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-3 col-md-3 col-sm-4">
+          <div class="col-xl-4 col-lg-4 col-md-6">
             <div class="list-group table-of-contents">
               <a class="list-group-item" href="#navbar">Navbar</a>
               <a class="list-group-item" href="#buttons">Buttons</a>
@@ -46,94 +46,114 @@
         ================================================== -->
       <div class="bs-docs-section clearfix">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-xl-12">
             <div class="page-header">
               <h1 id="navbar">Navbar</h1>
             </div>
             <div class="bs-component">
-              <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                  <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">Brand</a>
-                  </div>
-                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                      <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                      <li><a href="#">Link</a></li>
-                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                          <li><a href="#">Action</a></li>
-                          <li><a href="#">Another action</a></li>
-                          <li><a href="#">Something else here</a></li>
-                          <li class="divider"></li>
-                          <li><a href="#">Separated link</a></li>
-                          <li class="divider"></li>
-                          <li><a href="#">One more separated link</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                    <form class="navbar-form navbar-left" role="search">
-                      <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
+              <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">Brand</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown link
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
                       </div>
-                      <button type="submit" class="btn btn-default">Submit</button>
-                    </form>
-                    <ul class="nav navbar-nav navbar-right">
-                      <li><a href="#">Link</a></li>
-                    </ul>
-                  </div>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
                 </div>
               </nav>
             </div>
             <div class="bs-component">
-              <nav class="navbar navbar-inverse">
-                <div class="container-fluid">
-                  <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">Brand</a>
-                  </div>
-                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-                    <ul class="nav navbar-nav">
-                      <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                      <li><a href="#">Link</a></li>
-                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                          <li><a href="#">Action</a></li>
-                          <li><a href="#">Another action</a></li>
-                          <li><a href="#">Something else here</a></li>
-                          <li class="divider"></li>
-                          <li><a href="#">Separated link</a></li>
-                          <li class="divider"></li>
-                          <li><a href="#">One more separated link</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                    <form class="navbar-form navbar-left" role="search">
-                      <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
+              <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">Brand</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown link
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
                       </div>
-                      <button type="submit" class="btn btn-default">Submit</button>
-                    </form>
-                    <ul class="nav navbar-nav navbar-right">
-                      <li><a href="#">Link</a></li>
-                    </ul>
-                  </div>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
                 </div>
               </nav>
-              <div id="source-button" class="btn btn-primary btn-xs" style="display: none;">&lt; &gt;</div>
+            </div>
+            <div class="bs-component">
+              <nav class="navbar navbar-toggleable-md navbar-inverse bg-primary">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">Brand</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown link
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
             </div>
             <!-- /example -->
           </div>
@@ -144,13 +164,13 @@
       <div class="bs-docs-section">
         <div class="page-header">
           <div class="row">
-            <div class="col-lg-12">
+            <div class="col-xl-12">
               <h1 id="buttons">Buttons</h1>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-7">
+          <div class="col-xl-7">
             <p class="bs-component">
               <a href="#" class="btn btn-default">Default</a>
               <a href="#" class="btn btn-primary">Primary</a>
@@ -159,6 +179,15 @@
               <a href="#" class="btn btn-warning">Warning</a>
               <a href="#" class="btn btn-danger">Danger</a>
               <a href="#" class="btn btn-link">Link</a>
+            </p>
+            <p class="bs-component">
+              <a href="#" class="btn btn-outline-default">Default</a>
+              <a href="#" class="btn btn-outline-primary">Primary</a>
+              <a href="#" class="btn btn-outline-success">Success</a>
+              <a href="#" class="btn btn-outline-info">Info</a>
+              <a href="#" class="btn btn-outline-warning">Warning</a>
+              <a href="#" class="btn btn-outline-danger">Danger</a>
+              <a href="#" class="btn btn-outline-link">Link</a>
             </p>
             <p class="bs-component">
               <a href="#" class="btn btn-default disabled">Default</a>
@@ -232,55 +261,72 @@
               <a href="#" class="btn btn-primary btn-lg">Large button</a>
               <a href="#" class="btn btn-primary">Default button</a>
               <a href="#" class="btn btn-primary btn-sm">Small button</a>
-              <a href="#" class="btn btn-primary btn-xs">Mini button</a>
             </p>
           </div>
-          <div class="col-lg-5">
+          <div class="col-xl-5">
             <p class="bs-component">
-              <a href="#" class="btn btn-default btn-lg btn-block">Block level button</a>
+              <a href="#" class="btn btn-primary btn-lg btn-block">Block level button</a>
+              <a href="#" class="btn btn-secondary btn-lg btn-block">Block level button</a>
             </p>
             <div class="bs-component" style="margin-bottom: 15px;">
-              <div class="btn-group btn-group-justified">
-                <a href="#" class="btn btn-default">Left</a>
-                <a href="#" class="btn btn-default">Middle</a>
-                <a href="#" class="btn btn-default">Right</a>
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-primary active">
+                  <input type="checkbox" checked autocomplete="off"> Checkbox 1 (pre-checked)
+                </label>
+                <label class="btn btn-primary">
+                  <input type="checkbox" autocomplete="off"> Checkbox 2
+                </label>
+                <label class="btn btn-primary">
+                  <input type="checkbox" autocomplete="off"> Checkbox 3
+                </label>
               </div>
             </div>
             <div class="bs-component" style="margin-bottom: 15px;">
-              <div class="btn-toolbar">
-                <div class="btn-group">
-                  <a href="#" class="btn btn-default">1</a>
-                  <a href="#" class="btn btn-default">2</a>
-                  <a href="#" class="btn btn-default">3</a>
-                  <a href="#" class="btn btn-default">4</a>
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-primary active">
+                  <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
+                </label>
+                <label class="btn btn-primary">
+                  <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
+                </label>
+                <label class="btn btn-primary">
+                  <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
+                </label>
+              </div>
+            </div>
+            <div class="bs-component" style="margin-bottom: 15px;">
+              <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group mr-2" role="group" aria-label="First group">
+                  <button type="button" class="btn btn-secondary">1</button>
+                  <button type="button" class="btn btn-secondary">2</button>
+                  <button type="button" class="btn btn-secondary">3</button>
+                  <button type="button" class="btn btn-secondary">4</button>
                 </div>
-                <div class="btn-group">
-                  <a href="#" class="btn btn-default">5</a>
-                  <a href="#" class="btn btn-default">6</a>
-                  <a href="#" class="btn btn-default">7</a>
+                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                  <button type="button" class="btn btn-secondary">5</button>
+                  <button type="button" class="btn btn-secondary">6</button>
+                  <button type="button" class="btn btn-secondary">7</button>
                 </div>
-                <div class="btn-group">
-                  <a href="#" class="btn btn-default">8</a>
-                  <div class="btn-group">
-                    <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                    Dropdown
-                    <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Dropdown link</a></li>
-                      <li><a href="#">Dropdown link</a></li>
-                      <li><a href="#">Dropdown link</a></li>
-                    </ul>
+                <div class="btn-group" role="group" aria-label="Third group">
+                  <button type="button" class="btn btn-secondary">8</button>
+                  <div class="btn-group" role="group">
+                    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropdown
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                      <a class="dropdown-item" href="#">Dropdown link</a>
+                      <a class="dropdown-item" href="#">Dropdown link</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="bs-component">
-              <div class="btn-group-vertical">
-                <a href="#" class="btn btn-default">Button</a>
-                <a href="#" class="btn btn-default">Button</a>
-                <a href="#" class="btn btn-default">Button</a>
-                <a href="#" class="btn btn-default">Button</a>
+              <div class="btn-group-vertical" role="group">
+                <button type="button" class="btn btn-secondary">Button</button>
+                <button type="button" class="btn btn-secondary">Button</button>
+                <button type="button" class="btn btn-secondary">Button</button>
+                <button type="button" class="btn btn-secondary">Button</button>
               </div>
             </div>
           </div>
@@ -290,7 +336,7 @@
         ================================================== -->
       <div class="bs-docs-section">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-xl-12">
             <div class="page-header">
               <h1 id="typography">Typography</h1>
             </div>
@@ -298,7 +344,7 @@
         </div>
         <!-- Headings -->
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-xl-4">
             <div class="bs-component">
               <h1>Heading 1</h1>
               <h2>Heading 2</h2>
@@ -309,7 +355,7 @@
               <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-xl-4">
             <div class="bs-component">
               <h2>Example body text</h2>
               <p>Nullam quis risus eget <a href="#">urna mollis ornare</a> vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
@@ -319,7 +365,7 @@
               <p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-xl-4">
             <div class="bs-component">
               <h2>Emphasis classes</h2>
               <p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
@@ -333,12 +379,12 @@
         </div>
         <!-- Blockquotes -->
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-xl-12">
             <h2 id="type-blockquotes">Blockquotes</h2>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-xl-6">
             <div class="bs-component">
               <blockquote>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
@@ -346,7 +392,7 @@
               </blockquote>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-xl-6">
             <div class="bs-component">
               <blockquote class="blockquote-reverse">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
@@ -360,7 +406,7 @@
         ================================================== -->
       <div class="bs-docs-section">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-xl-12">
             <div class="page-header">
               <h1 id="tables">Tables</h1>
             </div>
@@ -428,27 +474,27 @@
         ================================================== -->
       <div class="bs-docs-section">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-xl-12">
             <div class="page-header">
               <h1 id="forms">Forms</h1>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-xl-6">
             <div class="well bs-component">
               <form class="form-horizontal">
                 <fieldset>
                   <legend>Legend</legend>
                   <div class="form-group">
-                    <label for="inputEmail" class="col-lg-2 control-label">Email</label>
-                    <div class="col-lg-10">
+                    <label for="inputEmail" class="col-xl-2 control-label">Email</label>
+                    <div class="col-xl-10">
                       <input type="text" class="form-control" id="inputEmail" placeholder="Email">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="inputPassword" class="col-lg-2 control-label">Password</label>
-                    <div class="col-lg-10">
+                    <label for="inputPassword" class="col-xl-2 control-label">Password</label>
+                    <div class="col-xl-10">
                       <input type="password" class="form-control" id="inputPassword" placeholder="Password">
                       <div class="checkbox">
                         <label>
@@ -458,8 +504,8 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="textArea" class="col-lg-2 control-label">Textarea</label>
-                    <div class="col-lg-10">
+                    <label for="textArea" class="col-xl-2 control-label">Textarea</label>
+                    <div class="col-xl-10">
                       <textarea class="form-control" rows="3" id="textArea"></textarea>
                       <grammarly-btn>
                         <div data-reactroot="" class="_e725ae-textarea_btn _e725ae-anonymous _e725ae-not_focused" style="z-index: 2; transform: translate(408.156px, 43px);">
@@ -472,8 +518,8 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-lg-2 control-label">Radios</label>
-                    <div class="col-lg-10">
+                    <label class="col-xl-2 control-label">Radios</label>
+                    <div class="col-xl-10">
                       <div class="radio">
                         <label>
                         <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
@@ -489,8 +535,8 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="select" class="col-lg-2 control-label">Selects</label>
-                    <div class="col-lg-10">
+                    <label for="select" class="col-xl-2 control-label">Selects</label>
+                    <div class="col-xl-10">
                       <select class="form-control" id="select">
                         <option>1</option>
                         <option>2</option>
@@ -509,7 +555,7 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <div class="col-lg-10 col-lg-offset-2">
+                    <div class="col-xl-10 col-xl-offset-2">
                       <button type="reset" class="btn btn-default">Cancel</button>
                       <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
@@ -518,7 +564,7 @@
               </form>
             </div>
           </div>
-          <div class="col-lg-4 col-lg-offset-1">
+          <div class="col-xl-4 col-xl-offset-1">
             <form class="bs-component">
               <div class="form-group">
                 <label class="control-label" for="focusedInput">Focused input</label>
@@ -570,14 +616,14 @@
         ================================================== -->
       <div class="bs-docs-section">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-xl-12">
             <div class="page-header">
               <h1 id="navs">Navs</h1>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-xl-4">
             <h2 id="nav-tabs">Tabs</h2>
             <div class="bs-component">
               <ul class="nav nav-tabs">
@@ -611,7 +657,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-xl-4">
             <h2 id="nav-pills">Pills</h2>
             <div class="bs-component">
               <ul class="nav nav-pills">
@@ -653,7 +699,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-xl-4">
             <h2 id="nav-breadcrumbs">Breadcrumbs</h2>
             <div class="bs-component">
               <ul class="breadcrumb">
@@ -672,7 +718,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-xl-4">
             <h2 id="pagination">Pagination</h2>
             <div class="bs-component">
               <ul class="pagination">
@@ -702,7 +748,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-xl-4">
             <h2 id="pager">Pager</h2>
             <div class="bs-component">
               <ul class="pager">
@@ -715,7 +761,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-xl-4">
           </div>
         </div>
       </div>
@@ -723,14 +769,14 @@
         ================================================== -->
       <div class="bs-docs-section">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-xl-12">
             <div class="page-header">
               <h1 id="indicators">Indicators</h1>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-xl-12">
             <h2>Alerts</h2>
             <div class="bs-component">
               <div class="alert alert-dismissible alert-warning">
@@ -742,7 +788,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-xl-4">
             <div class="bs-component">
               <div class="alert alert-dismissible alert-danger">
                 <button type="button" class="close" data-dismiss="alert">×</button>
@@ -750,7 +796,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-xl-4">
             <div class="bs-component">
               <div class="alert alert-dismissible alert-success">
                 <button type="button" class="close" data-dismiss="alert">×</button>
@@ -758,7 +804,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-xl-4">
             <div class="bs-component">
               <div class="alert alert-dismissible alert-info">
                 <button type="button" class="close" data-dismiss="alert">×</button>
@@ -768,7 +814,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-xl-4">
             <h2>Labels</h2>
             <div class="bs-component" style="margin-bottom: 40px;">
               <span class="label label-default">Default</span>
@@ -779,7 +825,7 @@
               <span class="label label-info">Info</span>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-xl-4">
             <h2>Badges</h2>
             <div class="bs-component">
               <ul class="nav nav-pills">
@@ -795,7 +841,7 @@
         ================================================== -->
       <div class="bs-docs-section">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-xl-12">
             <div class="page-header">
               <h1 id="progress-bars">Progress bars</h1>
             </div>
@@ -856,7 +902,7 @@
         ================================================== -->
       <div class="bs-docs-section">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-xl-12">
             <div class="page-header">
               <h1 id="containers">Containers</h1>
             </div>
@@ -870,12 +916,12 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-xl-12">
             <h2>List groups</h2>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-xl-4">
             <div class="bs-component">
               <ul class="list-group">
                 <li class="list-group-item">
@@ -893,7 +939,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-xl-4">
             <div class="bs-component">
               <div class="list-group">
                 <a href="#" class="list-group-item active">
@@ -906,7 +952,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-xl-4">
             <div class="bs-component">
               <div class="list-group">
                 <a href="#" class="list-group-item">
@@ -922,12 +968,12 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-xl-12">
             <h2>Panels</h2>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-xl-4">
             <div class="bs-component">
               <div class="panel panel-default">
                 <div class="panel-body">
@@ -948,7 +994,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-xl-4">
             <div class="bs-component">
               <div class="panel panel-primary">
                 <div class="panel-heading">
@@ -976,7 +1022,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-xl-4">
             <div class="bs-component">
               <div class="panel panel-danger">
                 <div class="panel-heading">
@@ -998,26 +1044,26 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-xl-12">
             <h2>Wells</h2>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-xl-4">
             <div class="bs-component">
               <div class="well">
                 Look, I'm in a well!
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-xl-4">
             <div class="bs-component">
               <div class="well well-sm">
                 Look, I'm in a small well!
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-xl-4">
             <div class="bs-component">
               <div class="well well-lg">
                 Look, I'm in a large well!
@@ -1030,14 +1076,14 @@
         ================================================== -->
       <div class="bs-docs-section">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-xl-12">
             <div class="page-header">
               <h1 id="dialogs">Dialogs</h1>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-xl-6">
             <h2>Modals</h2>
             <div class="bs-component">
               <div class="modal">
@@ -1059,7 +1105,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-xl-6">
             <h2>Popovers</h2>
             <div class="bs-component">
               <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="">Left</button>
@@ -1093,7 +1139,7 @@
       </div>
       <footer>
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-xl-12">
             <ul class="list-unstyled">
               <li class="pull-right"><a href="#top">Back to top</a></li>
               <li><a href="http://news.bootswatch.com" onclick="pageTracker._link(this.href); return false;">Blog</a></li>
